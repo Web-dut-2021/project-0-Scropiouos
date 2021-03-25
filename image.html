@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百度一下，你就知道</title>
+    <style type="text/css">
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .middle {
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            margin-top: 130px;
+        }
+
+        .input {
+            border: 1px solid #b6b6b6;
+            width: 474px;
+            height: 36px;
+            font-size: 20px;
+        }
+
+        .img {
+            align: middle;
+            border: 0;
+            width: 275px;
+            height: 140px;
+        }
+
+        .submit {
+            background-color: #3385ff;
+            height: 38px;
+            font-size: 20px;
+            color: white;
+            border: 0
+        }
+    </style>
+</head>
+<body style="background-color:darkslategray">
+    <div style="text-align:right; background-color:aliceblue">
+        <div class="menu" >
+            <a href="baidu.html">搜索</a>
+            <a href="advanced.html">高级搜索</a>
+        </div>
+    </div>
+
+    <div class="middle">
+        <form action="https://image.baidu.com/search/index" target="_blank" method="get">
+            <a href="https://www.baidu.com/" target="_blank" align="center">
+                <img src="./img/logoBaidu.png" alt="Baidu" class="img">
+            </a>
+            <br>
+            <input type="text" class="input" name="word">
+            <input type="text" name="tn" value="baiduimage" style="display:none" />
+            <input type="submit" value="百度一下" class="submit" href="https://www.baidu.com/">
+        </form>
+    </div>
+</body>
+</html>
